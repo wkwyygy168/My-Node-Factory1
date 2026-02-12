@@ -3,7 +3,7 @@ import base64
 
 def move_house():
     # 1. 目标源（你想搬运的 Gist 订阅链接）
-    target_url = "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml"
+    target_url = "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml","https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt"
     
     try:
         # 2. 下载内容
