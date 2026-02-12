@@ -1,25 +1,36 @@
 name: Node-Autopilot
+
 on:
-  schedule:
-    - cron: '0 */6 * * *' # 每6小时运行一次
-  workflow_dispatch:      # 允许手动点击运行
+  workflow_dispatch: # 保留这个，就是保留“手动点火”按钮
+
+# -------------------------------------------------------------
+# ✂️ 我已经帮你把下面的 schedule (定时器) 删掉了：
+#  schedule:
+#    - cron: '0 */6 * * *'
+# -------------------------------------------------------------
+
 jobs:
-  run-task:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions in/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Run logic
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Mirror Script
+        run: python main.py
+
+      - name: Commit and Push
         run: |
-          pip install requests
-          python main.py
-      - name: Save result
-        run: |
-          git config --local user.email "bot@github.com"
-          git config --local user.name "NodeBot"
-          git add .
-          git commit -m "Update nodes" || exit 0
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add nodes.txt nodes.yaml
+          git commit -m "Manual Refresh Nodes" || echo "No changes to commit"
           git push
