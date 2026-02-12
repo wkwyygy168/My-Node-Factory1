@@ -63,7 +63,6 @@ proxies:
   - ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.63:38388#%F0%9F%87%BB%F0%9F%87%B3VN%C2%B2_9%7C2.7MB%2Fs%7CGPT%E2%81%BA%7CGM%7CYT-US%7CX%7CHistory
   - trojan://BxceQaOe@203.198.123.162:443?sni=t.me%2Fripaojiedian&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0HK%C2%B2_5%7C12.2MB%2Fs%7C2%25%7CYT%7CX%7CHistory
   - vless://b183589d-5e32-4141-a39a-6cb747964c67@pl2.jugsenkeys4pays.su:443?security=reality&type=tcp&sni=pl2.jugsenkeys4pays.su&fp=chrome&flow=xtls-rprx-vision&pbk=C7H4Nh55F4B8iHaVHWY6VK562RI6p_t8H7lrX_O8SnQ&encryption=none#%F0%9F%87%B5%F0%9F%87%B1PL%C2%B2_2%7C0.7MB%2Fs%7CX%7CSucceed
-
 - cipher: 2022-blake3-aes-256-gcm
   name: 🇫🇷FR²_1|2.1MB/s|GPT⁺|D+|X|Succeed|[广播|机房]
   password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
