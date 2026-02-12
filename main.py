@@ -1,8 +1,9 @@
 import requests
 import base64
+import re
 
-def dual_mirror_factory():
-    # 1. 把你所有的源都扔在这里，脚本会自动按后缀分家
+def universal_mirror_factory():
+    # 你的四条核心镜像源
     sources = [
         "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml",
         "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml",
@@ -10,46 +11,54 @@ def dual_mirror_factory():
         "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.txt"
     ]
     
-    yaml_combined = ""
-    txt_combined = ""
+    yaml_results = []
+    txt_results = []
     
-    try:
-        for url in sources:
-            print(f"正在处理: {url}")
+    for url in sources:
+        try:
+            print(f"🚀 正在处理源: {url}")
             response = requests.get(url, timeout=15)
             content = response.text.strip()
             
-            # --- 逻辑 A：如果是 .yaml 源 ---
+            # --- 逻辑 A: 处理 YAML 后缀 (Clash 格式) ---
             if url.endswith(".yaml"):
-                # 镜像搬运，多个 YAML 之间加个分隔符防止连在一起
-                yaml_combined += content + "\n---\n"
-                
-            # --- 逻辑 B：如果是 .txt 源 ---
+                # 提取 YAML 里的节点部分，防止全局配置冲突
+                if "proxies:" in content:
+                    # 仅截取 proxies: 之后的内容，确保 Karing 订阅不会因为多个 document 报错
+                    proxy_part = content.split("proxies:")[1]
+                    yaml_results.append(proxy_part)
+                else:
+                    yaml_results.append(content)
+            
+            # --- 逻辑 B: 处理 TXT 后缀 (明文/Base64 格式) ---
             else:
-                # 尝试补齐 Base64 位并解密
-                temp_raw = content + "=" * (-len(content) % 4)
+                # 尝试 Base64 暴力解密
                 try:
-                    decoded = base64.b64decode(temp_raw).decode('utf-8', errors='ignore')
-                    # 如果解出来确实像节点链接，就用解开后的
+                    temp_content = content + "=" * (-len(content) % 4)
+                    decoded = base64.b64decode(temp_content).decode('utf-8', errors='ignore')
                     if "://" in decoded:
-                        txt_combined += decoded + "\n"
+                        txt_results.append(decoded)
                     else:
-                        txt_combined += content + "\n"
+                        txt_results.append(content)
                 except:
-                    # 解不开就原样镜像搬运
-                    txt_combined += content + "\n"
+                    txt_results.append(content)
+                    
+        except Exception as e:
+            print(f"❌ 处理 {url} 失败: {e}")
+
+    # --- 最终产出：YAML 镜像 ---
+    # 我们为 YAML 镜像加一个标准头，把所有抓到的 proxies 拼接在下面
+    final_yaml = "proxies:\n" + "\n".join(yaml_results)
+    with open("nodes.yaml", "w", encoding="utf-8") as f:
+        f.write(final_yaml)
+
+    # --- 最终产出：TXT 镜像 ---
+    # 合并所有明文链接
+    final_txt = "\n".join(txt_results)
+    with open("nodes.txt", "w", encoding="utf-8") as f:
+        f.write(final_txt)
         
-        # --- 最终写入各自的文件 ---
-        with open("nodes.yaml", "w", encoding="utf-8") as f:
-            f.write(yaml_combined)
-            
-        with open("nodes.txt", "w", encoding="utf-8") as f:
-            f.write(txt_combined)
-            
-        print("✅ 订阅源分类镜像全部完成！")
-        
-    except Exception as e:
-        print(f"❌ 运行过程中出错: {e}")
+    print(f"✨ 镜像大功告成！YAML 镜像已生成，TXT 镜像已生成。")
 
 if __name__ == "__main__":
-    dual_mirror_factory()
+    universal_mirror_factory()
