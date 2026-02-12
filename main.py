@@ -1,54 +1,64 @@
 import requests
 import base64
+import re
 
-def dual_mirror_factory():
-    # 1. 分类你的 4 条镜像源
-    yaml_sources = [
+def universal_mirror_factory():
+    # 你的四条核心镜像源
+    sources = [
         "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml",
-        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml"
-    ]
-    
-    txt_sources = [
+        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml",
         "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
         "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.txt"
     ]
     
-    # --- 处理 YAML 镜像 ---
-    combined_yaml = ""
-    for url in yaml_sources:
+    yaml_results = []
+    txt_results = []
+    
+    for url in sources:
         try:
-            print(f"正在镜像 YAML: {url}")
-            content = requests.get(url, timeout=15).text
-            combined_yaml += content + "\n---\n" # 用 YAML 分隔符连接
-        except Exception as e:
-            print(f"YAML 镜像失败 {url}: {e}")
-
-    with open("nodes.yaml", "w", encoding="utf-8") as f:
-        f.write(combined_yaml)
-
-    # --- 处理 TXT/Base64 镜像 ---
-    combined_txt = ""
-    for url in txt_sources:
-        try:
-            print(f"正在镜像 TXT: {url}")
-            raw = requests.get(url, timeout=15).text.strip()
-            # 尝试解密 Base64
-            try:
-                temp_raw = raw + "=" * (-len(raw) % 4)
-                decoded = base64.b64decode(temp_raw).decode('utf-8', errors='ignore')
-                if "://" in decoded:
-                    combined_txt += decoded + "\n"
+            print(f"🚀 正在处理源: {url}")
+            response = requests.get(url, timeout=15)
+            content = response.text.strip()
+            
+            # --- 逻辑 A: 处理 YAML 后缀 (Clash 格式) ---
+            if url.endswith(".yaml"):
+                # 提取 YAML 里的节点部分，防止全局配置冲突
+                if "proxies:" in content:
+                    # 仅截取 proxies: 之后的内容，确保 Karing 订阅不会因为多个 document 报错
+                    proxy_part = content.split("proxies:")[1]
+                    yaml_results.append(proxy_part)
                 else:
-                    combined_txt += raw + "\n"
-            except:
-                combined_txt += raw + "\n"
+                    yaml_results.append(content)
+            
+            # --- 逻辑 B: 处理 TXT 后缀 (明文/Base64 格式) ---
+            else:
+                # 尝试 Base64 暴力解密
+                try:
+                    temp_content = content + "=" * (-len(content) % 4)
+                    decoded = base64.b64decode(temp_content).decode('utf-8', errors='ignore')
+                    if "://" in decoded:
+                        txt_results.append(decoded)
+                    else:
+                        txt_results.append(content)
+                except:
+                    txt_results.append(content)
+                    
         except Exception as e:
-            print(f"TXT 镜像失败 {url}: {e}")
+            print(f"❌ 处理 {url} 失败: {e}")
 
+    # --- 最终产出：YAML 镜像 ---
+    # 我们为 YAML 镜像加一个标准头，把所有抓到的 proxies 拼接在下面
+    final_yaml = "proxies:\n" + "\n".join(yaml_results)
+    with open("nodes.yaml", "w", encoding="utf-8") as f:
+        f.write(final_yaml)
+
+    # --- 最终产出：TXT 镜像 ---
+    # 合并所有明文链接
+    final_txt = "\n".join(txt_results)
     with open("nodes.txt", "w", encoding="utf-8") as f:
-        f.write(combined_txt)
+        f.write(final_txt)
         
-    print("✅ 4条源全量镜像完成！已生成 nodes.yaml 和 nodes.txt")
+    print(f"✨ 镜像大功告成！YAML 镜像已生成，TXT 镜像已生成。")
 
 if __name__ == "__main__":
-    dual_mirror_factory()
+    universal_mirror_factory()
