@@ -1,806 +1,980 @@
 proxies:
 
-  - {name: DE_91b8e_0001, server: de.cdn.stun.su, port: 443, type: vless, uuid: eb071647-72a6-46be-8e89-ff3d228d52f6, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: de.cdn.stun.su, reality-opts: {public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA, short-id: 4daa022e84f8edf2}, udp: true}
-  - {name: HK_91b8e_0002, server: 42.2.28.64, port: 1314, type: vless, uuid: d607a577-978c-487a-a2ad-788e4129162a, flow: xtls-rprx-vision, tls: true, skip-cert-verify: true, client-fingerprint: random, servername: buylite.music.apple.com, reality-opts: {public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI, short-id: 4b070735}, udp: true}
-  - {name: IN_91b8e_0003, server: 144.24.97.225, port: 443, type: vless, uuid: 1834316d-2b59-4239-970d-c764218bcdf2, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: osxapps.itunes.apple.com, reality-opts: {public-key: h6jFhmMYpmiEmm4sxrBLBSxtgsdM5k5EUvrv1bKNFGU, short-id: 8894620bd4b91f71}, udp: true}
-  - {name: JP_91b8e_0004, server: 38.207.130.145, port: 48816, type: vless, uuid: 570d1a03-6acf-40ca-819e-1049906235d9, flow: xtls-rprx-vision, tls: true, skip-cert-verify: true, client-fingerprint: random, servername: www.python.org, reality-opts: {public-key: fk4uHkIWXJ5MbcsFASbAhKlC5gV9m-XovXftmIDSuxo, short-id: 21280d81}, udp: true}
-  - {name: KR_91b8e_0005, server: 121.169.46.116, port: 1090, type: socks5, username: Og%3D%3D, udp: true}
-  - {name: RU_91b8e_0007, server: meow-msc.nethcloud.top, port: 8443, type: vless, uuid: bf9931be-a7fd-46b3-9919-b858299e9f65, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: wikihow.com, reality-opts: {public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ, short-id: 8bd29483ded126b4}, udp: true}
-  - {name: RU_91b8e_0008, server: 158.160.223.36, port: 8443, type: vless, uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yandex.ru, reality-opts: {public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg, short-id: 48fccabc158a4c22}, udp: true}
-  - {name: RU_91b8e_0009, server: 89.169.128.105, port: 8443, type: vless, uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yandex.ru, reality-opts: {public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg, short-id: f4b4a6365558ea2e}, udp: true}
-  - {name: RU_91b8e_0010, server: 158.160.105.121, port: 443, type: vless, uuid: e8accc46-c511-42fb-919b-9283799a88a1, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yandex.ru, reality-opts: {public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc, short-id: 8f222b3475800821}, udp: true}
-  - {name: RU_91b8e_0011, server: 45.139.26.213, port: 443, type: vless, uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: www.yandex.ru, reality-opts: {public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE, short-id: 8a6605e7}, udp: true}
-  - {name: US_91b8e_0013, server: 203.10.96.138, port: 443, type: vless, uuid: c6977f74-e620-4748-a2d3-4351a588c659, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: cdn-dynmedia-1.microsoft.com, reality-opts: {public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU, short-id: fd26d49a}, udp: true}
-  - {name: US_91b8e_0014, server: 64.188.64.59, port: 443, type: vless, uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: yandex.ru, reality-opts: {public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k, short-id: efd29b2d25}, udp: true}
-  - {name: US_91b8e_0015, server: pl2.jugsenkeys4pays.su, port: 443, type: vless, uuid: b183589d-5e32-4141-a39a-6cb747964c67, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: pl2.jugsenkeys4pays.su, reality-opts: {public-key: C7H4Nh55F4B8iHaVHWY6VK562RI6p_t8H7lrX_O8SnQ}, udp: true}
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇵🇱PL²_1|0.6MB/s|0%|GPT⁺|X|History
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: 144.31.3.30
+  servername: poland.scroogethebest.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  xudp: true
+
+- name: 中国_1
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1572
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: 🇺🇸US_28|⬇️3.5MB/s
+  network: ws
+  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+  port: 443
+  server: 104.21.14.54
+  skip-cert-verify: true
+  sni: 6666YHjU.777159.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /dilyfCPEmLvYr5hYXD
+- name: 美国_1
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: hsdgbuys.pages.dev
+    path: /
+- name: 美国_2
+  network: ws
+  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+  port: 443
+  server: 104.21.14.54
+  skip-cert-verify: true
+  sni: 6666YHjU.777159.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /dilyfCPEmLvYr5hYXD
+- name: 中國_1
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6752
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: 香港
+  network: tcp
+  password: ef269dbc-0486-451f-b94b-d0c354bc3f1c
+  port: 443
+  server: tuntro001.instconn.com
+  skip-cert-verify: true
+  sni: awshk.686911.xyz
+  type: trojan
+  udp: true
+- name: 美國_1
+  network: tcp
+  password: installshield
+  port: 8443
+  server: 38.180.106.124
+  skip-cert-verify: true
+  sni: 38.180.106.124
+  type: trojan
+  udp: true
+- name: 美國_2
+  network: tcp
+  password: installshield
+  port: 8443
+  server: 38.180.106.124
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 中国_2
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3271
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: 美国_3
+  network: grpc
+  port: 8880
+  server: 638950280342842022.esfahan-drc-tusaas.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 美国_4
+  network: grpc
+  port: 8880
+  server: 638953873686410316.lahijan-drc-tusaas.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- grpc-opts:
+    grpc-service-name: grpc-jd
+  name: 🇦🇹AT_1|⬇️1.7MB/s
+  network: grpc
+  port: 8443
+  server: at.pixvpn.app
+  servername: jd.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5
+- flow: xtls-rprx-vision
+  name: 🇨🇦CA_1|⬇️2.6MB/s
+  network: tcp
+  port: 59303
+  server: 40.233.81.116
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+- flow: xtls-rprx-vision
+  name: 🇨🇦CA_2|⬇️1.4MB/s
+  network: tcp
+  port: 42557
+  server: 132.145.108.97
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- flow: xtls-rprx-vision
+  name: 🇩🇪DE_8|⬇️6.3MB/s
+  network: tcp
+  port: 8443
+  server: de.monkeyisland.life
+  servername: www.stackoverflow.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fd71044e-127b-429c-9f4a-bd2432e473be
+- flow: xtls-rprx-vision
+  name: 🇺🇸US_165|⬇️4.6MB/s
+  network: tcp
+  port: 443
+  server: us.nitroo-tech.ru
+  servername: mirror.yandex.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: f31f5fe0-0a42-436a-be94-437330801388
+- flow: xtls-rprx-vision
+  name: 德國_1
+  network: tcp
+  port: 44443
+  server: hybrid.arvancloud.online
+  servername: www.speedtest.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+- flow: xtls-rprx-vision
+  name: 法国_1
+  network: tcp
+  port: 443
+  server: 178.20.215.2
+  servername: speed.cloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
+- flow: xtls-rprx-vision
+  name: 芬兰_1
+  network: tcp
+  port: 443
+  server: fin01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
+- flow: xtls-rprx-vision
+  name: 加拿大_1
+  network: tcp
+  port: 26113
+  server: 150.230.28.100
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- name: 美国_5
+  network: ws
+  port: 443
+  server: 104.21.9.137
+  servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
+  ws-opts:
+    headers:
+      host: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+    path: /0SCvfqSaeeB74kgXZ
+- flow: xtls-rprx-vision
+  name: 土耳其_1
+  network: tcp
+  port: 443
+  server: 62.133.63.138
+  servername: tr.eu-ffast.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
+- name: 新加坡
+  port: 443
+  server: 92.112.22.117
+  skip-cert-verify: true
+  type: vless
+  uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 英国
+  network: grpc
+  port: 59995
+  server: 141.227.162.18
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+- name: jp
+  network: tcp
+  port: 11443
+  server: 183.240.179.88
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: df245bf8-8253-4029-90d8-ef30cfac75f1
+- flow: xtls-rprx-vision
+  name: 俄羅斯_1
+  network: tcp
+  port: 443
+  server: 62.133.63.138
+  servername: tr.eu-ffast.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
+- flow: xtls-rprx-vision
+  name: 土耳其_2
+  network: tcp
+  port: 443
+  server: 62.133.63.138
+  servername: tr.eu-ffast.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
+- flow: xtls-rprx-vision
+  name: US_1
+  network: tcp
+  port: 443
+  server: us.nitroo-tech.ru
+  servername: mirror.yandex.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: f31f5fe0-0a42-436a-be94-437330801388
+- name: 俄罗斯
+  port: 443
+  server: 92.112.22.117
+  skip-cert-verify: true
+  type: vless
+  uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+- name: 俄羅斯_2
+  port: 443
+  server: 92.112.22.117
+  skip-cert-verify: true
+  type: vless
+  uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 爱尔兰
+  network: grpc
+  port: 59995
+  server: 141.227.162.18
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+- flow: xtls-rprx-vision
+  name: 美國_3
+  network: tcp
+  port: 42557
+  server: 132.145.108.97
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- name: 美國_4
+  network: ws
+  port: 443
+  server: join-raiv2mmr-telegram.koyeb.app
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+  ws-opts:
+    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 南韓_1
+  network: grpc
+  port: 18541
+  server: 141.227.138.82
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 南韓_2
+  network: grpc
+  port: 54983
+  server: 141.227.134.240
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6016845b-61d0-49c5-b20c-d61e860778d4
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 英國_1
+  network: grpc
+  port: 40716
+  server: 51.89.137.87
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0cd02a20-80c8-43c4-ae2f-b72488549ef9
+- grpc-opts:
+    grpc-service-name: hydra.miniproxy.sbs
+  name: 英國_2
+  network: grpc
+  port: 2096
+  server: miniproxy.net
+  servername: hydra.miniproxy.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c19f5b4-ac8a-485c-b656-5fe46ee0d5cf
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 英國_3
+  network: grpc
+  port: 40716
+  server: 51.89.137.87
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0cd02a20-80c8-43c4-ae2f-b72488549ef9
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法國_1
+  network: grpc
+  port: 22808
+  server: 51.178.253.133
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b
+- name: 伊朗_1
+  network: tcp
+  port: 20532
+  server: 94.182.137.12
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+- flow: xtls-rprx-vision
+  name: 美国_6
+  network: tcp
+  port: 9443
+  server: a1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502
+- flow: xtls-rprx-vision
+  name: 摩爾多瓦_1
+  network: tcp
+  port: 443
+  server: 185.39.204.70
+  servername: nspk.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- name: 中國_2
+  network: tcp
+  port: 11443
+  server: 183.240.179.88
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: df245bf8-8253-4029-90d8-ef30cfac75f1
+- grpc-opts:
+    grpc-service-name: '@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot'
+  name: 烏茲別克斯坦
+  network: grpc
+  port: 3477
+  server: 95.134.130.138
+  servername: '@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot----@Evay_vpn_bot'
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 21e731fb-6f76-4a90-8330-420fba7552ba
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 南韓_3
+  network: grpc
+  port: 18541
+  server: 141.227.138.82
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd
+- flow: xtls-rprx-vision
+  name: US_2
+  network: tcp
+  port: 4443
+  server: c1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502
+- name: 俄羅斯_3
+  network: tcp
+  port: 8080
+  server: 195.66.25.21
+  servername: yandex.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+- flow: xtls-rprx-vision
+  name: 美國_5
+  network: tcp
+  port: 443
+  server: 38.180.26.205
+  servername: nspk.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- flow: xtls-rprx-vision
+  name: 美国_7
+  network: tcp
+  port: 8443
+  server: b1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502
+- name: 日本
+  network: tcp
+  port: 443
+  server: 160.187.111.222
+  servername: images-na.ssl-images-amazon.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- name: 芬蘭
+  network: tcp
+  port: 48600
+  server: fin7.ipstatic.info
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d
+- flow: xtls-rprx-vision
+  name: 阿拉伯聯合大公國
+  network: tcp
+  port: 443
+  server: ae01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
+- grpc-opts:
+    grpc-service-name: miro.com
+  name: 美國_6
+  network: grpc
+  port: 33811
+  server: 155.254.35.78
+  servername: miro.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3940e9ba-d0f6-4052-bd8e-f3c2a2a76599
+- flow: xtls-rprx-vision
+  name: 美國_7
+  network: tcp
+  port: 42557
+  server: 132.145.108.97
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 英國_4
+  network: grpc
+  port: 59995
+  server: 141.227.162.18
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 南韓_4
+  network: grpc
+  port: 59995
+  server: 141.227.162.18
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+- name: 伊朗_2
+  network: tcp
+  port: 20532
+  server: 94.182.137.12
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法國_2
+  network: grpc
+  port: 22808
+  server: 51.178.253.133
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: KR_1
+  network: grpc
+  port: 59995
+  server: 141.227.162.18
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: KR_2
+  network: grpc
+  port: 42817
+  server: 141.227.132.199
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f7df6c83-e527-4bb2-bae1-ea743edaffcd
+- name: 摩爾多瓦_2
+  network: tcp
+  port: 8080
+  server: 77.83.245.220
+  servername: yandex.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+- name: 美國_8
+  port: 16274
+  server: 155.254.35.78
+  skip-cert-verify: true
+  type: vless
+  uuid: 88b6ee92-883b-450c-a83d-77f71e1db388
+- flow: xtls-rprx-vision
+  name: 加拿大_2
+  network: tcp
+  port: 26113
+  server: 150.230.28.100
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- name: 伊朗_3
+  port: 80
+  server: mci.dl101movis.ir
+  skip-cert-verify: true
+  type: vless
+  uuid: 117ca567-3180-4d62-abcc-8fc0104c93ff
+- flow: xtls-rprx-vision
+  name: 加拿大_3
+  network: tcp
+  port: 59303
+  server: 40.233.81.116
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+- flow: xtls-rprx-vision
+  name: 哈薩克斯坦
+  network: tcp
+  port: 443
+  server: kz.connect-iskra.ru
+  servername: deepl.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2e532561-7a61-4fdf-a534-706682c2e209
+- flow: xtls-rprx-vision
+  name: 芬兰_2
+  network: tcp
+  port: 443
+  server: fin01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
+- name: 俄羅斯_4
+  network: tcp
+  port: 8080
+  server: 77.246.100.169
+  servername: yandex.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+- name: 美國_9
+  network: ws
+  port: 443
+  server: 138.197.16.108
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 79b94a94-b2f5-4d45-820b-17afeeae65a6
+  ws-opts:
+    headers:
+      host: zula.ir
+    path: /ws
+- flow: xtls-rprx-vision
+  name: 法國_3
+  network: tcp
+  port: 443
+  server: 178.20.215.2
+  servername: speed.cloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 美國_10
+  network: grpc
+  port: 40853
+  server: 15.235.45.229
+  servername: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0ff01b1-04d3-4b01-8ba9-b1dc47416c07
+- grpc-opts:
+    grpc-service-name: grpc-jd
+  name: 奧地利_1
+  network: grpc
+  port: 8443
+  server: at.pixvpn.app
+  servername: jd.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5
+- name: 美國_11
+  network: ws
+  port: 443
+  server: 134.209.196.115
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bed9958c-82a5-4c30-8616-723f7269c0b6
+  ws-opts:
+    headers:
+      host: zula.ir
+    path: /ws
+- name: 美國_12
+  port: 35722
+  server: 167.172.177.180
+  skip-cert-verify: true
+  type: vless
+  uuid: 33c2b39d-b53f-45cd-d5c9-d58df4756e95
+- name: 美國_13
+  network: ws
+  port: 443
+  server: 134.122.53.63
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f59e2420-b706-4bee-bcdd-1c2162e5372a
+  ws-opts:
+    headers:
+      host: zula.ir
+    path: /ws
+- name: 俄羅斯_5
+  network: grpc
+  port: 8880
+  server: 95.164.88.186
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 美國_14
+  network: ws
+  port: 443
+  server: 159.89.16.218
+  servername: zula.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f
+  ws-opts:
+    headers:
+      host: zula.ir
+    path: /ws
+- flow: xtls-rprx-vision
+  name: 加拿大_4
+  network: tcp
+  port: 26113
+  server: 150.230.28.100
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- flow: xtls-rprx-vision
+  name: 法国_2
+  network: tcp
+  port: 443
+  server: 178.20.215.2
+  servername: speed.cloudflare.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
+- grpc-opts:
+    grpc-service-name: grpc-jd
+  name: 奧地利_2
+  network: grpc
+  port: 8443
+  server: at.pixvpn.app
+  servername: jd.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8c9a7ef4-b692-41ee-90ca-669b04990ac5
+- name: 愛爾蘭
+  network: grpc
+  port: 8880
+  server: 638939927968108687.dublin-drc-tusaas.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- flow: xtls-rprx-vision
+  name: 美國_15
+  network: tcp
+  port: 443
+  server: 38.54.23.58
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6048472f-0993-4ae0-8203-960b9a0f4113
+- name: 中國_3
+  network: tcp
+  port: 11443
+  server: 183.240.179.88
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: df245bf8-8253-4029-90d8-ef30cfac75f1
+- flow: xtls-rprx-vision
+  name: 德國_2
+  network: tcp
+  port: 8443
+  server: de.srv.oplcdn.link
+  servername: ign.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: a3185438-23cb-4fe3-95da-3e5f3fc43525
+- name: 中国_3
+  network: tcp
+  port: 29495
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4a0e3cf3-4a10-4a38-bba4-b17b592a0d2b
+- name: 美国_8
+  network: ws
+  port: 443
+  server: www.visa.com.br
+  servername: nl-2.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bed9958c-82a5-4c30-8616-723f7269c0b6
+  ws-opts:
+    headers:
+      host: nl-2.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
+- name: 中国_4
+  network: tcp
+  port: 46822
+  server: 89.44.242.222
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
+- name: 美国_9
+  network: ws
+  port: 443
+  server: androidauthority.com
+  servername: fr-1.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 028ad849-cb35-4934-9a6a-79a7b480ab0f
+  ws-opts:
+    headers:
+      host: fr-1.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
+- name: 美国_10
+  network: ws
+  port: 443
+  server: cdnjs.com
+  servername: ca-1.rAyAn-rVp.cLoUdNs.cLuB
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0f65a4ee-ac15-4451-8b37-72230181c06c
+  ws-opts:
+    headers:
+      host: ca-1.rAyAn-rVp.cLoUdNs.cLuB
+    path: /ws
 proxy-groups:
-- name: ⭕ proxinode
-  type: select
+- name: 🚀 节点选择
   
-
-  - {name: 🇧🇷 巴西 | BRA, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 7f3fc9cb-9bdd-4f13-8943-ec318907e667, udp: true}
-  - {name: 🇩🇪 德国 | DEU, server: nlb3.mangshe.xyz, port: 2056, type: hysteria2, password: 7dd10318-28fd-413f-81f0-cd0a286e4779, auth: 7dd10318-28fd-413f-81f0-cd0a286e4779, sni: nlb3.mangshe.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇮 芬兰 | FIN, server: ruvid.subsvdragontoo.online, port: 8443, type: vless, uuid: c0c3dc30-4ed9-e13d-50e8-0a84a84815e3, tls: true, alpn: [h2, http/1.1], servername: ruvid.subsvdragontoo.online, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ruvid.subsvdragontoo.online}}, udp: true}
-  - {name: 🇫🇷 法国 | FRA, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 | GBR, server: 146.70.61.37, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
-  - {name: 🇭🇰 香港 | HKG, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: c49812ff-c1ee-4abb-8eee-52bfc16ef923, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 2, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 2c571efb-1da8-4e8f-ac48-6e7bfc72b70f, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 3, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 1f79c194-37cf-419d-994e-8d17136abb45, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 4, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 187db574-57ef-4e54-9d15-a018221b62f7, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 5, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 66c62e1a-8037-4154-ad0b-7a0ec415f46c, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 6, server: 58.152.25.208, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 7, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: def22699-548e-4b87-a3e6-954e944b24b9, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 8, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 9, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 8c21fb38-7550-4c77-bc69-bab18de843f2, sni: green2.cdntencentmusic.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 10, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: baaaa3b6-4c92-40dc-b8c3-17e0e32ab4b8, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 11, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 04e5b584-1850-483d-a844-9ad624a4ca8e, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 12, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: 190adba1-a76f-471f-b780-d3e53a3c3d0a, sni: green2.cdntencentmusic.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 13, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: a1a00c82-5356-4a49-8944-1cd0f94168bb, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 14, server: freea.glyphara.com, port: 30101, type: vless, uuid: c43fb59a-6289-45d1-aaeb-18a16ba1cbe9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: egnl0iFXY3IZYfvHwoNd72sCaULkoFRoL78wQiFwcDU, short-id: "176d4445" }, servername: itunes.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 | HKG 15, server: cdnfire.xiaomispeed.com, port: 21101, type: trojan, password: c1dc5387-d907-4f37-9500-eb3a9d6e8553, sni: cdnfire.xiaomispeed.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 | HKG 16, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: c8f26adb-1f8b-45a5-be5c-111b065985fe, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 | HKG 17, server: 103.149.183.80, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
-  - {name: 🇭🇰 香港 | HKG 18, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: e7e93253-5f3d-4c83-a551-531696bbb840, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 | IND, server: mm1.mangshe.xyz, port: 2056, type: hysteria2, password: 7dd10318-28fd-413f-81f0-cd0a286e4779, auth: 7dd10318-28fd-413f-81f0-cd0a286e4779, sni: mm1.mangshe.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 | JPN, server: freea.glyphara.com, port: 30301, type: vless, uuid: 9614d89e-7739-4d33-9154-19b1151e07e1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM, short-id: "950cee8a" }, servername: lol.secure.dyn.riotcdn.net, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 | NLD, server: 82.38.31.214, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
-  - {name: 🇵🇱 波兰 | POL, server: ndded2.subsvdragontoo.online, port: 9443, type: vless, uuid: c0c3dc30-4ed9-e13d-50e8-0a84a84815e3, tls: true, alpn: [h2, http/1.1], servername: ndded2.subsvdragontoo.online, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ndded2.subsvdragontoo.online}}, udp: true}
-  - {name: 🇸🇬 新加坡 | SGP, server: freea.glyphara.com, port: 30401, type: vless, uuid: c43fb59a-6289-45d1-aaeb-18a16ba1cbe9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk, short-id: "105a652c" }, servername: learn.microsoft.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇹🇭 泰国 | THA, server: 85c58d11-tak740-tw35ua-1m49t.id.oshuawei.com, port: 32232, type: http, username: c357a728-1211-11f0-9a65-f23c9164ca5d, password: c357a728-1211-11f0-9a65-f23c9164ca5d, tls: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN, server: freea.glyphara.com, port: 30202, type: vless, uuid: 9614d89e-7739-4d33-9154-19b1151e07e1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 9ahErgB4NKffqiZe3HHRx7Wb5br086fhnI75YuCdN0U, short-id: "10fa499e" }, servername: www.samsung.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN 2, server: hinet1.xn--9kqp42aims.top, port: 20200, type: vless, uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI, short-id: "4b070735" }, servername: buylite.music.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇹🇼 🇨🇳 台湾 | TWN 3, server: cdnfire.xiaomispeed.com, port: 22231, type: trojan, password: c1dc5387-d907-4f37-9500-eb3a9d6e8553, sni: cdnfire.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA, server: 174.136.205.68, port: 443, type: vless, uuid: 8fc089ef-0bb1-4983-bd45-4c70283a470b, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 2, server: 174.136.205.68, port: 443, type: vless, uuid: 108ab6db-bd0a-4379-9021-56163f1721b1, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 3, server: 174.136.205.68, port: 443, type: vless, uuid: 35f2f529-968d-4727-b57a-bcc39a3fd2ae, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 4, server: 174.136.205.68, port: 443, type: vless, uuid: 6e154174-27d9-45ad-bb81-b173d49723a2, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 5, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 6, server: freea.glyphara.com, port: 30703, type: vless, uuid: c43fb59a-6289-45d1-aaeb-18a16ba1cbe9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Fpcp8ed_KjL5rnn0gstMa0AQPL8GcYMtArb--r1AhnI, short-id: "845532fa" }, servername: mensura.cdn-apple.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 7, server: 104.167.197.27, port: 443, type: vless, uuid: c5f8c9a4-916d-45c3-aad3-cd3ed706c5dd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: a0utGrRVTHL53cH4poHif9aPJNNQ10nhiMSdx8n1kGk, short-id: "5a2d4f49" }, servername: azure.microsoft.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 8, server: 27.50.49.8, port: 443, type: trojan, password: 5a2c16f9, sni: 5c.hhhhh.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /27.50.49.8:443, headers: {Host: 5c.hhhhh.eu.org}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 9, server: 174.136.205.68, port: 443, type: vless, uuid: 0b736194-b906-419c-aebf-8ff1d3eb7020, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 10, server: 174.136.205.68, port: 443, type: vless, uuid: 12025c43-51dc-497b-90a2-6d57177857ff, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 11, server: 174.136.205.68, port: 443, type: vless, uuid: 357e5e82-2f69-4788-a1f2-3efee1bfc6dd, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 12, server: 174.136.205.68, port: 443, type: vless, uuid: 48dfab21-8d1c-4cde-ac24-d2617f262dcc, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 13, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: e7e93253-5f3d-4c83-a551-531696bbb840, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 14, server: d3589bae-tak740-tw35ua-1m49t.sjc.oshuawei.com, port: 443, type: http, username: c357a728-1211-11f0-9a65-f23c9164ca5d, password: c357a728-1211-11f0-9a65-f23c9164ca5d, tls: true}
-  - {name: 🇺🇸 美国 | USA 15, server: 1.ae1.indevs.in, port: 80, type: vmess, uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 1.AE1.InDeVs.In, network: ws, ws-opts: {path: /KHtPvNZl371C8NsbbZ1wwDhJ3, headers: {Host: 1.aE1.InDevs.In}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 16, server: 174.136.205.68, port: 443, type: vless, uuid: d71cd588-72c1-4780-9e70-e73e5c212bb5, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 17, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 36325a98-46a4-4770-977a-9a9570e0bcc6, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 18, server: hju.zem.indevs.in, port: 80, type: vmess, uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: HJu.ZEM.IndEvS.in, network: ws, ws-opts: {path: /KHtPvNZl371C8NsbbZ1wwDhJ3, headers: {Host: hJU.zem.inDEvS.in}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 19, server: 174.136.205.68, port: 443, type: vless, uuid: f8fa4562-f23d-455e-a7d5-7b769275106c, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 20, server: 174.136.205.68, port: 443, type: vless, uuid: 3433d1b4-d771-430d-9db9-76a4b8a0088a, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 21, server: 174.136.205.68, port: 443, type: vless, uuid: e639ee47-6227-4bd9-83f0-1c07f979d1e0, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 22, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 302f7690-aae0-449c-bfe0-0c3ac869dbb2, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 23, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: a1a00c82-5356-4a49-8944-1cd0f94168bb, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 24, server: green2.cdntencentmusic.com, port: 35501, type: trojan, password: c8f26adb-1f8b-45a5-be5c-111b065985fe, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 25, server: 174.136.205.68, port: 443, type: vless, uuid: 6c0eea0b-924a-4b1e-bb26-c8ef04812ecf, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 26, server: 27.50.49.2, port: 443, type: trojan, password: 5a2c16f9, sni: 5c.hhhhh.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /27.50.49.2:443, headers: {Host: 5c.hhhhh.eu.org}}, udp: true}
-  - {name: 🇺🇸 美国 | USA 27, server: 174.136.205.68, port: 443, type: vless, uuid: 94b00022-db77-47ba-9fa9-da391c446574, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 28, server: lll98.131.pp.ua, port: 443, type: trojan, password: 98b419ef-83a2-4d1b-a23d-566b7f24477b, sni: LLL98.131.pP.ua, alpn: [h2], skip-cert-verify: false, network: grpc, grpc-opts: {grpc-service-name: Klh0x8wthtV4H3biiBu4Mb}, udp: true}
-  - {name: 🇺🇸 美国 | USA 29, server: 174.136.205.68, port: 443, type: vless, uuid: 7e0696bf-8874-4520-931e-373bbd3160c5, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 30, server: edfr.999864.xyz, port: 443, type: vmess, uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: edfr.999864.xyz, network: grpc, grpc-opts: {grpc-service-name: GgigazFGDLgFWDoXqgMlQBIqO}, udp: true}
-  - {name: 🇺🇸 美国 | USA 31, server: 174.136.205.68, port: 443, type: vless, uuid: 2a311afa-0b06-47f0-9af3-0fac03423b2c, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 32, server: 174.136.205.68, port: 443, type: vless, uuid: 334c3ce6-c92a-4f6f-bced-b28259b0bd30, tls: true, reality-opts: {public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc, short-id: "2da72ce6" }, servername: navi.bankrate.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 | USA 33, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 26635779-8ce6-4c07-ae5d-f3769ec95ddd, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 34, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 852a0251-7fbd-4a07-a365-352695af950c, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 35, server: green2.cdntencentmusic.com, port: 35501, type: trojan, password: 8c21fb38-7550-4c77-bc69-bab18de843f2, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 | USA 36, server: green2.cdntencentmusic.com, port: 35502, type: trojan, password: 6f038cee-6ba1-4941-bce5-de1969f37405, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南 | VNM, server: 103.186.155.128, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 2, server: 103.186.154.60, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 3, server: 103.186.154.252, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 4, server: 103.186.155.25, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 5, server: 103.186.154.233, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 6, server: 103.186.154.174, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 | VNM 7, server: 103.186.154.179, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-proxy-groups:
-  - name: ✈️ ‍起飞
-    type: select
-    
-
-  - name: 巴林 - 麦纳麦 - Amazon.com, Inc. - 1
-    server: blaab.wsone.icu
-    type: trojan
-    port: 443
-    password: M7v%w11Se*
-    sni: blaab.wsone.icu
-    skip-cert-verify: true
-    delay: 2578
-  - name: 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1
-    server: 185.100.159.79
-    port: 443
-    type: ss
-    country: 🇵🇱 PL
-    password: i9lip2dJ8kV4wJQ0pJuRr6
-    cipher: chacha20-ietf-poly1305
-    delay: 760
-  - name: 法国 - 巴黎 - Amazon.com, Inc. - 1
-    server: 15.188.241.30
-    type: trojan
-    country: 🇫🇷FR
-    port: 22223
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 820
-  - name: 法国 - 巴黎 - Amazon.com, Inc. - 2
-    server: 15.188.241.30
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 845
-  - name: 法国 - 巴黎 - Online S.A.S. - 4
-    server: 2001:bc8:32d7:302::10
-    port: 44579
-    type: vmess
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-      headers:
-        Host: AZERB.NET
-    udp: true
-    delay: 884
-  - name: 法国 - 鲁贝 - OVH SAS - 5
-    server: 57.131.42.19
-    port: 8389
-    type: ss
-    cipher: 2022-blake3-aes-256-gcm
-    password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
-    udp: true
-    delay: 933
-  - name: 法国 - 瓦特勒洛 - OVH SAS - 3
-    server: tgju.org
-    type: vmess
-    country: 🇺🇸US
-    port: 8080
-    uuid: nasnet
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: nasnet-162191099.sharghdaily.co
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /nasnet/cdn?ed=2560
-      headers:
-        HOST: nasnet-162191099.sharghdaily.co
-    delay: 875
-  - name: 芬兰 - 赫尔辛基 - Scalaxy B.V. - 2
-    server: 38.244.137.202
-    type: ss
-    country: 🇺🇸US
-    port: 45380
-    password: E6GbjW3IZ4Wokvz4VYLj4o
-    cipher: chacha20-ietf-poly1305
-    delay: 732
-  - name: 芬兰 - 赫尔辛基 - WAIcore Ltd - 1
-    server: 178.17.61.67
-    type: ss
-    country: 🇮🇶IQ
-    port: 5790
-    password: qS3skwmolrQ70q842irQD0
-    cipher: chacha20-ietf-poly1305
-    delay: 2324
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 3
-    server: 3.35.174.240
-    port: 8989
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    udp: true
-    delay: 338
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
-    server: 3.35.174.240
-    port: 6688
-    type: trojan
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-    delay: 830
-  - name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
-    server: 154.90.62.168
-    port: 989
-    type: ss
-    country: 🇺🇸 US
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 2095
-  - name: 韩国 - 首尔特别市 - Oracle Corporation - 1
-    server: 152.70.92.69
-    type: vmess
-    country: 🇰🇷 KR
-    port: 80
-    udp: true
-    uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
-    alterId: 0
-    cipher: auto
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    h2-opts: {}
-    delay: 786
-  - name: 美国 - 洛杉矶 - GSL Networks Pty LTD - 10
-    type: vless
-    server: 104.18.126.69
-    port: 443
-    uuid: 9264c736-5315-473e-b60d-3586a31714bf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pq/us8
-      headers:
-        Host: usa8.xn--ghqu5fm27b67w.com
-    client-fingerprint: chrome
-    servername: usa8.xn--ghqu5fm27b67w.com
-    delay: 824
-  - name: 美国 - 洛杉矶 - HIVELOCITY, Inc. - 1
-    server: 57.180.14.50
-    port: 2890
-    type: trojan
-    password: 9372cb81c7b0ad903f91f2f8a4d3f02b
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1203
-  - name: 美国 - 紐約 - Massivegrid LTD - 8
-    server: nju.bb4.indevs.in
-    port: 80
-    type: vmess
-    uuid: b020865b-7404-4894-ba65-a7414b10cda3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr
-      headers:
-        Host: nju.bb4.indevs.in
-    udp: true
-    delay: 1691
-  - name: 美国 - 紐約 - Massivegrid LTD - 9
-    server: bnmj.wc6.ccwu.cc
-    port: 80
-    type: vmess
-    uuid: 1798b14b-aee0-4008-ba9a-2e53877761b4
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /kFK9O5cl8ZycyrxcJWNVFC21
-      headers:
-        Host: bnmj.wc6.ccwu.cc
-    udp: true
-    delay: 1481
-  - name: 美国 - 圣路易斯 - Contabo Inc. - 4
-    server: 104.17.77.77
-    type: vmess
-    country: 🏁ZZ
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: v2ray1.dozapp.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        HOST: v2ray1.dozapp.xyz
-    delay: 1336
-  - name: 美国 - 聖荷西 - Eons Data Communications Limited - 6
-    server: green2.cdntencentmusic.com
-    port: 35501
-    type: trojan
-    password: bd42df14-0524-4d86-ac9f-592a93951684
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 1972
-  - name: 美国 - 聖荷西 - Meteverse Limited. - 3
-    server: 174.35.123.165
-    type: ss
-    port: 26524
-    password: f433ac2b27fd694f
-    cipher: rc4-md5
-    delay: 589
-  - name: 美国 - 芝加哥 - HIVELOCITY, Inc. - 2
-    server: 43.207.89.113
-    port: 3159
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 1287
-  - name: 美国 - Ashburn - Oracle Corporation - 11
-    type: vless
-    server: 69.84.182.108
-    port: 443
-    uuid: 9264c736-5315-473e-b60d-3586a31714bf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pq/us6
-      headers:
-        Host: pq-us6.globals-download.com
-    client-fingerprint: chrome
-    servername: pq-us6.globals-download.com
-    delay: 985
-  - name: 美国 - Piscataway - The Constant Company, LLC - 7
-    server: 64.176.215.70
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: hbhO0xomsJzhO24F
-    cipher: aes-256-gcm
-    delay: 685
-  - name: 美国 - San Jose - Oracle Corporation - 5
-    server: 160.153.137.199
-    type: vmess
-    country: 🇳🇱NL
-    port: 443
-    uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ous3.dean52.top
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-      headers:
-        HOST: ous3.dean52.top
-    delay: 2586
-  - name: 葡萄牙 - 里斯本 - BrainStorm Network, Inc - 1
-    server: 185.231.233.112
-    type: ss
-    country: 🏁 ZZ
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1801
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
-    server: 18.179.36.198
-    port: 8989
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    udp: true
-    delay: 185
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 5
-    server: 18.179.36.198
-    port: 6688
-    type: trojan
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-    sni: baidu.com
-    skip-cert-verify: true
-    udp: true
-    delay: 302
-  - name: 日本 - 东京 - GSL Networks Pty LTD - 6
-    type: vless
-    server: unamecf.xn--ghqu5fm27b67w.com
-    port: 443
-    uuid: 9264c736-5315-473e-b60d-3586a31714bf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pq/jp5
-      headers:
-        Host: ujp5.xn--ghqu5fm27b67w.com
-    client-fingerprint: ios
-    servername: ujp5.xn--ghqu5fm27b67w.com
-    delay: 891
-  - name: 日本 - 东京 - GSL Networks Pty LTD - 7
-    type: vless
-    server: 104.18.125.69
-    port: 443
-    uuid: 9264c736-5315-473e-b60d-3586a31714bf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pq/jp5
-      headers:
-        Host: ujp5.xn--ghqu5fm27b67w.com
-    client-fingerprint: ios
-    servername: ujp5.xn--ghqu5fm27b67w.com
-    delay: 1211
-  - name: 日本 - 东京 - NTT PC Communications, Inc. - 2
-    server: 160.16.144.208
-    port: 3423
-    type: trojan
-    password: 9372cb81c7b0ad903f91f2f8a4d3f02b
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1102
-  - name: 日本 - 横滨市 - InfoSphere - 1
-    server: 160.16.57.238
-    port: 400
-    type: trojan
-    password: 9372cb81c7b0ad903f91f2f8a4d3f02b
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1101
-  - name: 日本 - 横滨市 - InfoSphere - 3
-    server: 13.113.192.229
-    port: 2595
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%252Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 1288
-  - name: >-
-      土耳其 - 贝伊奥卢 - Turunc Smart Bilgisayar Teknoloji Ve Dis Ticaret Limited
-      Sirketi - 2
-    server: turk1.net.net
-    port: 80
-    type: vmess
-    uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tr1-smart.adelping.com.
-    udp: true
-    delay: 1869
-  - name: 土耳其 - 伊斯坦布尔 - Baxet Group Inc. - 1
-    server: tr-1.stunnel.cc
-    type: trojan
-    country: 🇨🇿CZ
-    port: 8441
-    password: tunnel-jdybi
-    sni: creativecommons.org
-    skip-cert-verify: true
-    udp: true
-    delay: 2083
-  - name: 土耳其 - 伊斯坦布尔 - Baxet Group Inc. - 3
-    server: tr-1.stunnel.cc
-    type: ss
-    country: 🇨🇿CZ
-    port: 8444
-    password: tunnel-fbrof
-    cipher: chacha20-ietf-poly1305
-    delay: 1024
-  - name: 土耳其 - 伊斯坦布尔 - Baxet Group Inc. - 4
-    server: tr-1.stunnel.cc
-    type: trojan
-    country: 🇨🇿CZ
-    port: 8441
-    password: tunnel-ljlcf
-    sni: creativecommons.org
-    skip-cert-verify: true
-    udp: true
-    delay: 1537
-  - name: 土耳其 - 伊斯坦布尔 - Global Connectivity Solutions LLP - 5
-    server: 83.217.9.140
-    type: ss
-    country: 🇷🇺RU
-    port: 1381
-    password: JHqptZxDVsnQf0wL2EgNuo
-    cipher: chacha20-ietf-poly1305
-    delay: 738
-  - name: 新加坡 - 新加坡 - M247 Europe SRL - 1
-    server: 153.121.39.240
-    port: 3901
-    type: trojan
-    password: 9372cb81c7b0ad903f91f2f8a4d3f02b
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1170
-  - name: 新加坡 - 新加坡 - M247 Europe SRL - 2
-    server: 95.40.55.141
-    port: 3579
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%252Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 1236
-  - name: 印度 - 海得拉巴 - Oracle Corporation - 1
-    type: vless
-    server: 104.18.126.50
-    port: 443
-    uuid: 9264c736-5315-473e-b60d-3586a31714bf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /pq/in1
-      headers:
-        Host: in1s-s.pqvip.top
-    client-fingerprint: chrome
-    servername: in1s-s.pqvip.top
-    delay: 1548
-  - name: 印度尼西亚 - 雅加达 - Google LLC - 1
-    server: qfdfsg.wsone.icu
-    type: trojan
-    country: 🇮🇩ID
-    port: 443
-    password: M7v%w11Se*
-    sni: qfdfsg.wsone.icu
-    skip-cert-verify: true
-    udp: true
-    delay: 2686
-  - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.154.223
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1316
-  - name: 越南 - Hải Dương - FASTLY - 10
-    server: 103.186.154.19
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1116
-  - name: 越南 - Hải Dương - FASTLY - 11
-    server: 103.186.154.216
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 839
-  - name: 越南 - Hải Dương - FASTLY - 12
-    server: 103.186.155.10
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 990
-  - name: 越南 - Hải Dương - FASTLY - 13
-    server: 103.186.154.77
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1025
-  - name: 越南 - Hải Dương - FASTLY - 14
-    server: 103.186.155.134
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1187
-  - name: 越南 - Hải Dương - FASTLY - 15
-    server: 103.186.154.153
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 964
-  - name: 越南 - Hải Dương - FASTLY - 16
-    server: 103.186.155.150
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1336
-  - name: 越南 - Hải Dương - FASTLY - 17
-    server: 103.186.154.158
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1372
-  - name: 越南 - Hải Dương - FASTLY - 18
-    server: 103.186.155.240
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1199
-  - name: 越南 - Hải Dương - FASTLY - 19
-    server: 103.186.155.107
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 847
-  - name: 越南 - Hải Dương - FASTLY - 2
-    server: 103.186.154.167
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1361
-  - name: 越南 - Hải Dương - FASTLY - 20
-    server: 103.186.154.80
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 903
-  - name: 越南 - Hải Dương - FASTLY - 21
-    server: 103.186.155.141
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1424
-  - name: 越南 - Hải Dương - FASTLY - 22
-    server: 103.186.154.47
-    type: ss
-    country: 🏁 ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1442
-  - name: 越南 - Hải Dương - FASTLY - 23
-    server: 103.186.154.219
-    type: ss
-    country: 🏁 ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1496
-  - name: 越南 - Hải Dương - FASTLY - 24
-    server: 103.186.155.5
-    type: ss
-    country: 🏁 ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 825
-  - name: 越南 - Hải Dương - FASTLY - 3
-    server: 103.186.155.69
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1033
-  - name: 越南 - Hải Dương - FASTLY - 4
-    server: 103.186.154.142
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1043
-  - name: 越南 - Hải Dương - FASTLY - 5
-    server: 103.186.155.43
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 996
-  - name: 越南 - Hải Dương - FASTLY - 6
-    server: 103.186.154.224
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1001
-  - name: 越南 - Hải Dương - FASTLY - 7
-    server: 103.186.154.215
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1247
-  - name: 越南 - Hải Dương - FASTLY - 8
-    server: 103.186.154.13
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1210
-  - name: 越南 - Hải Dương - FASTLY - 9
-    server: 103.186.154.166
-    port: 38388
-    type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1827
-  - name: 中国 - 台湾 - Akile LTD - 3
-    server: cdnfire.xiaomispeed.com
-    port: 22231
-    type: trojan
-    password: 8ae35cce-016e-4454-b06b-0b4e4527b92a
-    sni: cdnfire.xiaomispeed.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 515
-  - name: 中国 - 香港 - Akile LTD - 4
-    server: cdnfire.xiaomispeed.com
-    port: 21115
-    type: trojan
-    password: 8ae35cce-016e-4454-b06b-0b4e4527b92a
-    sni: cdnfire.xiaomispeed.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 469
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
-    server: 95.40.55.141
-    port: 2826
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 1141
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
-    server: 203.198.123.162
-    port: 443
-    type: trojan
-    password: BxceQaOe
-    sni: 203.198.123.162
-    skip-cert-verify: true
-    udp: true
-    delay: 1247
-  - name: 中国 - 香港 - Ipxo LLC - 5
-    server: green2.cdntencentmusic.com
-    port: 31102
-    type: trojan
-    password: 3f83b84d-b69a-4386-887a-ee51b1d18fe8
-    sni: green2.cdntencentmusic.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 2291
-  - name: 中国 - 香港 - Ipxo LLC - 6
-    server: green2.cdntencentmusic.com
-    port: 31101
-    type: trojan
-    password: b9c3a952-bd14-4d4a-a1db-afd53fa1c414
-    sni: green2.cdntencentmusic.com
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 975
