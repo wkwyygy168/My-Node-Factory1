@@ -5,10 +5,10 @@ import re
 def universal_mirror_factory():
     # 你的四条核心镜像源
     sources = [
-        "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml",
-        "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml",
-        "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml",
-        "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt"
+        "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml",
+        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml",
+        "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
+        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.txt"
     ]
     
     yaml_results = []
