@@ -437,17 +437,6 @@ proxies:
   reality-opts:
     public-key: WWLjmGIGGoASS70lNhnJIbc7tlZ-Tuv9pNrSj915438
     short-id: 6d8fb3c010517eee
-- name: 🇺🇸_美国_5
-  type: vless
-  server: 172.234.130.82
-  port: 10001
-  uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM
-    short-id: 1a24af87
 - name: 🇷🇺_俄罗斯_3
   type: vless
   server: 95.163.211.13
