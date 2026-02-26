@@ -1,19 +1,15 @@
-name: Node-Autopilot
-
+name: Update Nodes
 on:
-  workflow_dispatch: # 保留这个，就是保留“手动点火”按钮
-
-# -------------------------------------------------------------
-# ✂️ 我已经帮你把下面的 schedule (定时器) 删掉了：
-#  schedule:
-#    - cron: '0 */6 * * *'
-# -------------------------------------------------------------
-
+  workflow_dispatch:
+  schedule:
+    - cron: '0 23 * * *' # 北京时间 07:00
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -22,15 +18,18 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install requests
+        # 这一行是关键！必须安装 requirements.txt 里的所有库
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Run Mirror Script
+      - name: Run script
         run: python main.py
 
       - name: Commit and Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add nodes.txt nodes.yaml
-          git commit -m "Manual Refresh Nodes" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Fix: Add yaml parser and resolve duplicates" --allow-empty
+          git push origin main --force
