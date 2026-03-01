@@ -6,14 +6,10 @@ import re
 def universal_mirror_factory():
     # 你的核心源列表（已修正全角逗号）
     sources = [
-        "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml",
-        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml",
-        "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-        "https://gh-proxy.com/raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/yudou66.txt",
-        "https://raw.githubusercontent.com/Flikify/Free-Node/main/v2ray.txt",
-        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml",
-        "https://raw.githubusercontent.com/Pawpieee/Free-Nodes/main/node.txt",
-        "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
+        "https://sub.9999669.xyz/sub?id=rs1",
+        "https://sub.9999669.xyz/sub?id=rs1&target=mixed",
+        "https://sub.9999669.xyz/sub?id=rs1&target=quanx",
+        "https://sub.9999669.xyz/sub?id=rs1&target=clash"
     ]
     
     final_proxies = []
